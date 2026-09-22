@@ -2,7 +2,7 @@
 
 ## Downstream endpoints — Kazi Connect provides to SettleIn
 
-| # | Method | Endpoint | Purpose | Maps to Need |
+| # | Method | Path/Endpoint | Purpose | Maps to Need |
 |---|--------|----------|---------|---------------|
 | 1 | GET | `/api/jobs?status=active` | Returns all currently active job/service listings | Statement 1 |
 | 2 | GET | `/api/jobs?county={county}&category={category}&status=active` | Filters active listings by location and category near a student's accommodation | Statement 2 |
