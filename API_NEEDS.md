@@ -1,12 +1,12 @@
-# API Needs Statements — FundiLink (Team 15)
+# API Needs Statements — Kazi Connect(Team 15)
 
 Format: *"[Consumer] needs to [verb] [resource] in order to [reason]."*
 
 ## Our needs from Shamba Direct (Team 14) — upstream
 
-1. FundiLink needs to read active produce listings and market locations from Shamba Direct in order to surface nearby casual-labor gigs (loading, portering, market assistance) around active trade points.
-2. FundiLink needs to read depot/headquarters county data from Shamba Direct in order to rank job listings by proximity to active produce markets.
-3. FundiLink needs to read farmer/vendor ratings from Shamba Direct in order to cross-verify trust scores for users listed as sellers on Shamba Direct and workers on FundiLink.
+1. Kazi Connect needs to read active produce listings and market locations from Shamba Direct in order to surface nearby casual-labor gigs (loading, portering, market assistance) around active trade points.
+2. Kazi Connect needs to read depot/headquarters county data from Shamba Direct in order to rank job listings by proximity to active produce markets.
+3. Kazi Connect needs to read farmer/vendor ratings from Shamba Direct in order to cross-verify trust scores for users listed as sellers on Shamba Direct and workers on FundiLink.
 
 ## SettleIn's needs from us (Team 1) — downstream
 
