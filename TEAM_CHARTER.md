@@ -1,13 +1,14 @@
 # Team Charter
 
 ## Team
-- Team name: [name]
-- [Ashlyn Aringo] — Created the Repo
-- [Dwayne] — Testing the Repo
-- [Mark Bruce Nyangena] — Collaborator
+- Team name: [Kazi Connect]
+- [Ashlyn Aringo] — API Lead
+- [Dwayne] — Backend Dev
+- [Mark Bruce Nyangena] — Integration/QA Lead
+- [Solovea Mutei] - Shared Design and Docs
 
 ## App summary
-FundiLink is a platform that connects employers with nearby casual workers
+Kazi Connect is a platform that connects employers with nearby casual workers
 (fundis). Employers can post short-term jobs and workers can browse jobs by
 category and apply.
 
@@ -33,5 +34,5 @@ category and apply.
 - View a worker's applications (linked in navigation but not yet implemented)
 
 ## Ring position
-- Upstream provider: [Team name]
-- Downstream consumer: [Team name]
+- Upstream provider: [Shamba-Direct]
+- Downstream consumer: [SettleIn]
