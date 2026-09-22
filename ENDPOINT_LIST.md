@@ -1,6 +1,6 @@
-# ENDPOINT_LIST.md — FundiLink (Team 15)
+# ENDPOINT_LIST.md — Kazi Connect (Team 15)
 
-## Downstream endpoints — FundiLink provides to SettleIn
+## Downstream endpoints — Kazi Connect provides to SettleIn
 
 | # | Method | Endpoint | Purpose | Maps to Need |
 |---|--------|----------|---------|---------------|
