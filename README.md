@@ -1,4 +1,4 @@
- # FundiLink
+ # Kazi Connect
 
 **Kenya's fastest way to find casual work, nearby.**
 
@@ -12,7 +12,7 @@ A web platform that connects people who need short-term skilled work done — pl
 In Kenya, finding a casual worker — a plumber, cleaner, electrician, or similar — is still largely done through WhatsApp groups, personal referrals, and informal agencies. This process is slow, unreliable, and lacks any way to verify a worker's skill, availability, or trustworthiness before hiring them. On the other side, skilled casual workers struggle to find consistent work without paying agency fees or relying entirely on word-of-mouth referrals.
 
 ### Solution Provided
-FundiLink is a two-sided web platform connecting employers who need short-term work done with verified workers nearby. Employers post jobs with a category, location, and pay rate. Workers browse and filter jobs by trade, and apply directly through the platform — no agency, no middleman.
+Kazi Connect is a two-sided web platform connecting employers who need short-term work done with verified workers nearby. Employers post jobs with a category, location, and pay rate. Workers browse and filter jobs by trade, and apply directly through the platform — no agency, no middleman.
 
 ### Value Addition
 - **No placement fees** — unlike traditional agencies, FundiLink doesn't take a cut from either side.
