@@ -2,5 +2,104 @@ openapi: 3.0.0
 info:
 title: [Kazi Connect] API
 version: 1.0.0
+description: Week 4 Lab OpenAPI specification contract for job and application tracking
 paths:
+     #---ENDPOINT 1---
+   /api/jobs:
+     get:
+       summary: :Returns all currently active job listings
+       parameters:
+         - name: status
+           in: query
+           required: true
+           schema:
+             type: string
+             example: active
+       response:
+       '200':
+         description: A list of active jobs retrieved succesfully.
+         content:
+           application/json:
+             schema:
+               type: array
+               items:
+                 $ref: '#/components/schemas/Job'
+
+     #---ENDPOINT 2---
+   /api/jobs/search:
+     get:
+       summary: filters active listings by location and category near dtudent accomodation
+       parameters:
+         - name: county
+           in: query
+           required: true
+           schema:
+             type: string
+             example: Nairobi
+         - name: category
+           in: query
+           required: true
+           schema:
+             type: string
+             example: accomodation
+         - name: statuts
+           in: query
+           required: true
+           schema:
+             type: string
+             example: active
+       response:
+       '200':
+         description: A filtered list of nearby job listings matching criteria.
+         content:
+           application/json:
+             schema:
+               type: array
+               items:
+                 $ref: '#/components/schemas/Job'   
+
+     #---ENDPOINT 3---
+   /api/jobs/{jobId}:
+     get:
+       summary:Returns a single job full details, including status and pay range
+       parameters:
+         - name: jobId
+           in: path
+           required: true
+           description: The unique identifier of the job
+           schema:
+             type: string
+             example: "job_12345"
+       response:
+       '200':
+         description: Job details retrieved successfully.
+         content:
+           application/json:
+             schema:
+                 $ref: '#/components/schemas/Job'  
+        '404':
+           description: Job ID not found.
+
+components:
+  schemas:
+    Job:
+      type: object
+      properties:
+         id:
+           type: string
+         title:
+           type: string
+         category:
+           type: string
+         county:
+           type: string
+         status:
+           type: string
+          payRange:
+           type: object
+           properties:
+             min:
+               type: number
+             max:
+               type: number
 
