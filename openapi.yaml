@@ -98,8 +98,74 @@ components:
           payRange:
            type: object
            properties:
+
+           
              min:
                type: number
              max:
                type: number
 
+  #---ENDPOINT 4---
+   /api/applications/{applicatrionId}/status:
+     get:
+       summary: Returns the current status of an application requeest.
+       parameters:
+         - name: applicationId
+           in: path
+           required: true
+           schema:
+             type: string
+       response:
+       '200':
+         description: Succesfull response containing application status.
+
+  #---ENDPOINT 5---
+   /api/applications/{applicatrionId}/subscribe:
+     get:
+       summary: Opens a WebSocket that pushes status changes in real time.
+       parameters:
+         - name: applicationId
+           in: path
+           required: true
+           schema:
+             type: string
+       response:
+       '200':
+         description: Succesfully established real-time stream subscription.
+
+#---ENDPOINT 6---
+   /api/applications:
+     get:
+       summary: Creates a new application/service request from a SettleIn student
+       response:
+       '200':
+         description: Application succesfully created.
+
+#---ENDPOINT 7---
+   /api/applications/{applicatrionId}:
+     put:
+       summary: Updates an existing pending application (e.g. edit details)
+       parameters:
+         - name: applicationId
+           in: path
+           required: true
+           schema:
+             type: string
+       response:
+       '200':
+         description: Application succeessfully updated.
+
+     #---ENDPOINT 8---
+   /api/applications/{applicatrionId} (DELETE):
+     delete:
+       summary: Cancels a pending application request
+       parameters:
+         - name: applicationId
+           in: path
+           required: true
+           schema:
+             type: string
+       response:
+       '200':
+         description: Application successfully canceled.
+        
